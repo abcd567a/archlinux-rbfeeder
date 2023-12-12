@@ -20,6 +20,8 @@ makepkg -si
 
 ```
 sudo rbfeeder --setkey xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+sudo reboot
 ```
 </br>
 (B) If you dont have a key, then issue following command. </br>
