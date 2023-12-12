@@ -17,6 +17,7 @@ sha256sums_armv6h=('SKIP')
 sha256sums_armv7h=('SKIP')
 sha256sums_aarch64=('SKIP')
 
+makedepends=('fakeroot')
 depends=('protobuf-c' 'jansson' 'rtl-sdr')
 
 install=rbfeeder.install
