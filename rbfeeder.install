@@ -1,0 +1,28 @@
+#!/bin/bash
+post_install() {
+        file1=/usr/lib/librtlsdr.so.0
+        file2=/usr/lib/librtlsdr.so
+
+        if [ ! -f "$file1" -a -f "$file2" ]
+        then
+          echo "$file1 NOT found, $file2 YES found."
+          sudo ln -sf ${file2} ${file1}
+          echo " created symlink $file1 to $file2"
+        fi
+
+        useradd --system rbfeeder
+        chown rbfeeder /etc/rbfeeder.ini
+
+        systemctl enable rbfeeder
+}
+
+pre_remove() {
+        systemctl stop rbfeeder
+        systemctl disable rbfeeder
+        userdel rbfeeder
+}
+
+post_upgrade() {
+        post_install
+}
+
