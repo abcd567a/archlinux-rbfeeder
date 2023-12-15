@@ -22,6 +22,9 @@ sha256sums_aarch64=('SKIP')
 
 install=rbfeeder.install
 
+backup=(etc/rbfeeder.ini)
+
+
 package() {
   bsdtar -xf data.tar.xz -C "$pkgdir/"
   mv "$pkgdir/lib" "$pkgdir/usr/"
