@@ -10,6 +10,9 @@ post_install() {
           echo " created symlink $file1 to $file2"
         fi
 
+        sed -i 's/=+-\/bin/=-\/usr\/bin/g' /usr/lib/systemd/system/rbfeeder.service
+        sed -i 's/=\/bin/=\/usr\/bin/g' /usr/lib/systemd/system/rbfeeder.service
+
         useradd --system rbfeeder
         chown rbfeeder /etc/rbfeeder.ini
 
