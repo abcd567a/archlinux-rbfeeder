@@ -17,10 +17,12 @@ post_install() {
  
         echo -e "\e[1;95m  Installation of rbfeeder Completed.... \e[0;39m"
         echo -e "\e[1;32m  If you have a feeder key, then add it by following command: \e[0;39m"
-        echo -e "\e[1;32m      sudo rbfeeder --setkey <your Radarbox24 feeder key> \e[0;39m"
-        echo -e "\e[1;32m      sudo systemctl restart rbfeeder \e[0;39m"
-        echo -e "\e[1;32m  If you do NOT have a feeder key, then system will add  \e[0;39m"
-        echo -e "\e[1;32m  the key and Station number in file /etc/rbfeeder.ini \e[0;39m"
+        echo -e "\e[1;39m      sudo rbfeeder --setkey <your Radarbox24 feeder key> \e[0;39m"
+        echo -e "\e[1;39m      sudo systemctl restart rbfeeder \e[0;39m"
+        echo ""
+        echo -e "\e[1;32m  If you do NOT have a feeder key, then issue following command:  \e[0;39m"
+        echo -e "\e[1;39m      sudo systemctl restart rbfeeder \e[0;39m"
+        echo -e "\e[1;32m  the system will add the key and Station number in file /etc/rbfeeder.ini \e[0;39m"
 }
 
 pre_remove() {
