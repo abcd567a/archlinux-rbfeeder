@@ -2,7 +2,7 @@
 # Maintainer: abcd567
 
 pkgname=rbfeeder
-pkgver=1.0.10+bullseye
+pkgver=1.0.15+bookworm
 pkgrel=0
 pkgdesc="ADS-B Data Feeder of RadarBox24.com"
 url="https://www.radarbox.com/sharing-data"
