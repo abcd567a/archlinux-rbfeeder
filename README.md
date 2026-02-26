@@ -1,4 +1,4 @@
-# archlinux-rbfeeder ver 1.0.10+bullseye 
+# archlinux-rbfeeder ver 1.0.15+bookworm
 
 ### Install RadarBox24's Data Feeder on Arch Linux OS on Raspberry PI and other SBC: </br>armhf, armv7 arm64, aarch64, armv8 </br>
 
